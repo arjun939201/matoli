@@ -1,69 +1,97 @@
 body {
-  font-family: sans-serif;
-  background: #fefbf4;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  background-color: #fef6ea;
 }
 
 .container {
-  max-width: 480px;
+  max-width: 540px;
   margin: 30px auto;
-  padding: 15px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  background: #fffdf5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border: 1px solid #e6dccb;
 }
 
 h1 {
+  font-size: 20px;
   text-align: center;
-  font-size: 18px;
-  color: #5a3e2b;
-  margin-bottom: 15px;
+  color: #5a2f0d;
+  margin-bottom: 5px;
+}
+
+h1 span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2f2f2f;
+}
+
+p.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  background: #fff4d5;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #e7d6b8;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #5c4b3b;
 }
 
 input[type="text"] {
   width: 100%;
-  padding: 8px 10px;
+  padding: 10px 12px;
   font-size: 14px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
   box-sizing: border-box;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 15px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 th, td {
-  padding: 6px 8px;
   text-align: left;
-  border-bottom: 1px solid #eee;
+  padding: 10px 8px;
+  border-bottom: 1px solid #e0d8c7;
 }
 
 th {
-  background-color: #f5e6d4;
-  color: #3d2b1f;
+  background-color: #f2e1c2;
+  color: #4a3220;
 }
 
 .highlight {
   background-color: yellow;
+  font-weight: bold;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .container {
     width: 95%;
     padding: 10px;
   }
 
   h1 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   table {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
