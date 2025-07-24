@@ -29,7 +29,13 @@ function displayResults(query) {
     const normTelugu = normalize(entry.telugu);
     const normTrans = normalize(entry.transliteration);
     const normMeaning = normalize(entry.meaning);
-    const match = normTelugu.includes(normQuery) || normTrans.includes(normQuery) || normMeaning.includes(normQuery);
+    const normNote = entry.note ? normalize(entry.note) : "";
+
+    const match =
+      normTelugu.includes(normQuery) ||
+      normTrans.includes(normQuery) ||
+      normMeaning.includes(normQuery) ||
+      normNote.includes(normQuery);
 
     if (match) {
       const row = document.createElement("tr");
