@@ -2,18 +2,16 @@
 <html lang="te">
 <head>
   <meta charset="UTF-8" />
-  <title>తెల్లడి | Melimi Telugu Dictionary</title>
+  <title>తెల్లడి | Telugu Dictionary</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1>తెల్లడి | Melimi Telugu Dictionary</h1>
-      <input type="text" id="searchInput" placeholder="Search Telugu word, transliteration, or meaning..." />
-    </header>
-
-    <table id="resultsTable">
+    <h1>తెల్లడి | Telugu Dictionary</h1>
+    <input type="text" id="searchInput" placeholder="Search word, meaning, or transliteration..." />
+    
+    <table id="resultsTable" style="display: none;">
       <thead>
         <tr>
           <th>Telugu</th>
@@ -22,9 +20,7 @@
           <th>Meaning</th>
         </tr>
       </thead>
-      <tbody id="resultsBody">
-        <!-- Results appear here -->
-      </tbody>
+      <tbody id="resultsBody"></tbody>
     </table>
   </div>
 
